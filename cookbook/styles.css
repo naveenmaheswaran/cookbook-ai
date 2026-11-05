@@ -1,0 +1,43 @@
+:root {
+  --bg: #fbf8f3;
+  --card: #fff;
+  --text: #2b2520;
+  --muted: #7a6f66;
+  --accent: #c0582b;
+  --border: #e8e0d6;
+  --tag-bg: #f3e6dc;
+  --backdrop: rgba(0,0,0,.4);
+}
+:root[data-theme="dark"] {
+  --bg: #1c1916;
+  --card: #26221e;
+  --text: #ece6df;
+  --muted: #a89d92;
+  --accent: #e07a4a;
+  --border: #3a342e;
+  --tag-bg: #3a2a20;
+  --backdrop: rgba(0,0,0,.6);
+}
+input, select, textarea { background: var(--card); color: var(--text); }
+dialog { background: var(--card); color: var(--text); }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); }
+header { padding: 24px 16px; border-bottom: 1px solid var(--border); background: var(--card); }
+h1 { margin: 0 0 12px; font-family: Georgia, serif; color: var(--accent); }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; }
+input, select, textarea, button { font: inherit; padding: 8px 10px; border: 1px solid var(--border); border-radius: 6px; }
+#search { flex: 1 1 220px; }
+button { background: var(--accent); color: #fff; border: none; cursor: pointer; }
+button[type=button] { background: var(--border); color: var(--text); }
+main { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; cursor: pointer; }
+.card:hover { border-color: var(--accent); }
+.card h3 { margin: 0 0 6px; font-family: Georgia, serif; }
+.meta { color: var(--muted); font-size: 14px; }
+.tag { display: inline-block; background: var(--tag-bg); color: var(--accent); border-radius: 99px; padding: 2px 10px; font-size: 12px; margin-bottom: 8px; }
+dialog { border: none; border-radius: 12px; max-width: 560px; width: calc(100% - 32px); padding: 24px; }
+dialog::backdrop { background: var(--backdrop); }
+dialog h2 { margin-top: 0; font-family: Georgia, serif; }
+form label { display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px; font-size: 14px; }
+.actions { display: flex; justify-content: flex-end; gap: 8px; }
