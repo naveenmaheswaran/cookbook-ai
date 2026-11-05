@@ -1,0 +1,8 @@
+{
+  "title": "Chocolate Chip Cookies",
+  "category": "Dessert",
+  "time": 30,
+  "servings": 24,
+  "ingredients": ["1 cup butter", "3/4 cup sugar", "3/4 cup brown sugar", "2 eggs", "2 1/4 cups flour", "1 tsp baking soda", "2 cups chocolate chips"],
+  "steps": ["Cream butter and sugars, beat in eggs.", "Stir in flour and baking soda, then chips.", "Bake spoonfuls at 190°C (375°F) for 9–11 minutes."]
+}

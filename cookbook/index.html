@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Cookbook</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>My Cookbook</h1>
+  <div class="controls">
+    <input id="search" type="search" placeholder="Search recipes or ingredients…">
+    <select id="category"><option value="">All categories</option></select>
+    <button id="addBtn">+ Add recipe</button>
+    <button type="button" id="themeBtn">☾ Dark</button>
+  </div>
+</header>
+
+<main>
+  <section id="list" class="grid"></section>
+  <p id="empty" hidden>No recipes found.</p>
+</main>
+
+<dialog id="detail"></dialog>
+
+<dialog id="formDialog">
+  <form id="form" method="dialog">
+    <h2>Add recipe</h2>
+    <label>Title <input name="title" required></label>
+    <label>Category <input name="category" placeholder="e.g. Dessert" required></label>
+    <label>Time (minutes) <input name="time" type="number" min="1" required></label>
+    <label>Servings <input name="servings" type="number" min="1" required></label>
+    <label>Ingredients (one per line) <textarea name="ingredients" rows="5" required></textarea></label>
+    <label>Steps (one per line) <textarea name="steps" rows="5" required></textarea></label>
+    <div class="actions">
+      <button type="button" id="cancel">Cancel</button>
+      <button type="submit">Save</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>
